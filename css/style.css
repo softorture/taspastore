@@ -172,3 +172,7 @@ h1 { font: 600 clamp(40px, 6.4vw, 92px)/1.02 var(--sans); letter-spacing: -0.03e
   .top nav a:nth-child(2) { display: none; }
   .hero-actions .btn { flex: 1 1 auto; }
 }
+
+/* card opened by a deep link (#maker-<id>) */
+.card.is-target .tag-card { box-shadow: inset 0 0 0 2px var(--ribbon); }
+.card.is-target:focus { outline: none; }
