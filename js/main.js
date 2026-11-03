@@ -16,8 +16,8 @@
   function setDeadline(iso) {
     var d = new Date(iso + "T23:59:59+05:00");
     var days = Math.ceil((d - new Date()) / 86400000);
-    var txt = $("[data-deadline-text]");
-    if (txt) txt.textContent = d.getDate() + " " + months[d.getMonth()];
+    var label = d.getDate() + " " + months[d.getMonth()];
+    $$("[data-deadline-text]").forEach(function (t) { t.textContent = label; });
     var n = $("[data-days]"), l = $("[data-days-label]");
     if (!n || !l) return;
     if (days > 0) {
@@ -27,6 +27,18 @@
       n.textContent = "0";
       l.textContent = "Заказы к празднику закрыты. Мастера принимают заказы после праздников";
     }
+  }
+
+  /* #maker-<id> in the URL (links from ads and posts): scroll to that card once it exists and mark it */
+  function focusHash() {
+    var id = decodeURIComponent(location.hash || "").slice(1);
+    if (!/^maker-/.test(id)) return;
+    var li = document.getElementById(id);
+    if (!li) return;
+    li.classList.add("is-target");
+    li.setAttribute("tabindex", "-1");
+    li.scrollIntoView({ block: "center" });
+    li.focus({ preventScroll: true });
   }
 
   function price(m) {
@@ -50,6 +62,7 @@
 
     makers.forEach(function (m) {
       var li = tpl.content.firstElementChild.cloneNode(true);
+      li.id = "maker-" + m.id;
       li.dataset.category = m.category;
       li.dataset.from = m.priceFrom || 0;
       li.dataset.to = m.priceTo || m.priceFrom || 0;
@@ -134,6 +147,7 @@
       setDeadline(data.orderDeadline);
       if (data.contactTelegram) $$("[data-tg]").forEach(function (a) { a.href = "https://t.me/" + data.contactTelegram; });
       render(data);
+      focusHash();
     })
     .catch(function () {
       setDeadline("2026-12-15");
