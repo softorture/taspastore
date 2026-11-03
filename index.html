@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>taspastore: подарки ручной работы, Алматы</title>
+<meta name="description" content="Новогодний гид подарков от мастеров Алматы: украшения, керамика, свечи, кожа. Пишете мастеру напрямую, он делает и привозит.">
+<meta property="og:title" content="taspastore: подарки ручной работы, Алматы">
+<meta property="og:description" content="Гид подарков от мастеров Алматы. Заказ напрямую у мастера, успеть к Новому году.">
+<meta property="og:image" content="https://softorture.github.io/taspastore/img/og.png">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#F2F5F8">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M9 3h14l6 6v20H3V9z' fill='%23EAD9B0'/%3E%3Ccircle cx='16' cy='9' r='3' fill='%23B8232F'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&family=Onest:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip" href="#makers">К мастерам</a>
+
+<header class="top">
+  <div class="wrap top-in">
+    <a class="brand" href="#" aria-label="taspastore, наверх">taspa<span>store</span></a>
+    <nav aria-label="Разделы">
+      <a href="#makers">Мастера</a>
+      <a href="#how">Как заказать</a>
+      <a href="#join">Мастерам</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap hero-in">
+      <div class="hero-copy">
+        <h1>Подарки, которые сделали руками в&nbsp;Алматы</h1>
+        <p class="lead">Мастера города в одном гиде: украшения, керамика, свечи, кожа. Выбираете вещь, пишете мастеру напрямую, он делает и привозит.</p>
+        <div class="hero-actions">
+          <a class="btn btn-ink" href="#makers">Смотреть мастеров</a>
+          <a class="btn btn-line" href="#how">Как заказать</a>
+        </div>
+      </div>
+      <div class="hero-tag" aria-label="Срок заказа к Новому году">
+        <svg class="string" viewBox="0 0 120 160" aria-hidden="true"><path d="M60 0 C 58 50, 70 90, 62 152" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+        <div class="tag tag-big">
+          <span class="hole" aria-hidden="true"></span>
+          <p class="tag-k">Успеть к Новому году</p>
+          <p class="tag-v">заказ до <span data-deadline-text>15 декабря</span></p>
+          <p class="tag-count"><span class="days" data-days>41</span><span class="days-l" data-days-label>день до последнего заказа</span></p>
+          <p class="tag-note">Ручная работа требует времени. Мастера считают срок от заказа, поэтому лучше не тянуть.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="makers" id="makers" aria-labelledby="makers-h">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 id="makers-h">Мастера</h2>
+        <p>Каждую вещь делают вручную, поэтому у многих изделий есть варианты и срок изготовления. Детали уточняйте у мастера.</p>
+      </div>
+      <div class="filters" role="group" aria-label="Фильтры">
+        <div class="chips" data-filter="category" aria-label="Категория"></div>
+        <div class="chips" data-filter="price" aria-label="Цена">
+          <button type="button" class="chip" data-value="all" aria-pressed="true">Любая цена</button>
+          <button type="button" class="chip" data-value="0-10000" aria-pressed="false">до 10 000 ₸</button>
+          <button type="button" class="chip" data-value="10000-20000" aria-pressed="false">10 000…20 000 ₸</button>
+          <button type="button" class="chip" data-value="20000-1000000" aria-pressed="false">от 20 000 ₸</button>
+        </div>
+      </div>
+      <ul class="grid" data-grid aria-live="polite"></ul>
+      <p class="empty" data-empty hidden>В этой категории пока никого. Выберите другую или <a href="#join">предложите мастера</a>.</p>
+    </div>
+  </section>
+
+  <section class="how" id="how" aria-labelledby="how-h">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 id="how-h">Как заказать</h2>
+        <p>Гид не продаёт сам: деньги и доставка идут напрямую между вами и мастером. Так вещь делают под вас, а не берут со склада.</p>
+      </div>
+      <ol class="steps">
+        <li><h3>Выберите мастера</h3><p>Фильтруйте по категории и цене. Под каждым мастером срок и диапазон цен.</p></li>
+        <li><h3>Напишите напрямую</h3><p>Кнопка открывает Instagram или WhatsApp мастера. Скажите, что вы из taspastore, и для кого подарок.</p></li>
+        <li><h3>Оплата и доставка у мастера</h3><p>Обычно предоплата и доставка по Алматы курьером. Условия у каждого свои, мастер их назовёт.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="join" id="join" aria-labelledby="join-h">
+    <div class="wrap join-in">
+      <div>
+        <h2 id="join-h">Вы мастер из Алматы?</h2>
+        <p>Собираем первый сезон гида к Новому году. Подходит ручная работа, которую вы успеваете сделать до середины декабря: украшения, керамика, свечи, кожа, текстиль, принты.</p>
+        <p>Расскажите в Telegram, что делаете, ценовой диапазон и сколько изделий успеете. Пришлём условия участия.</p>
+      </div>
+      <div class="join-card tag">
+        <span class="hole" aria-hidden="true"></span>
+        <p class="tag-k">Заявка мастера</p>
+        <ul class="join-list">
+          <li>Ссылка на ваш Instagram</li>
+          <li>Что делаете и из чего</li>
+          <li>Цены от и до</li>
+          <li>Сколько штук успеете до 15 декабря</li>
+        </ul>
+        <a class="btn btn-ribbon" data-tg href="https://t.me/rarealmatysnowflake" target="_blank" rel="noopener">Написать в Telegram</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-in">
+    <p class="brand">taspa<span>store</span></p>
+    <p>Гид подарков ручной работы. Алматы, сезон к Новому году 2027. Сделано студией <a href="https://softorture.github.io/taspa-site/">Taspa</a>.</p>
+    <p class="small">Товары продают мастера. taspastore не принимает оплату и не хранит ваши данные.</p>
+  </div>
+</footer>
+
+<template id="card">
+  <li class="card" data-category="" data-from="" data-to="">
+    <div class="card-photo"></div>
+    <div class="tag tag-card">
+      <span class="hole" aria-hidden="true"></span>
+      <p class="card-cat"></p>
+      <h3 class="card-name"></h3>
+      <p class="card-what"></p>
+      <dl class="card-meta">
+        <div><dt>Из чего</dt><dd class="m-materials"></dd></div>
+        <div><dt>Срок</dt><dd class="m-lead"></dd></div>
+      </dl>
+      <p class="card-price"></p>
+      <div class="card-actions"></div>
+    </div>
+  </li>
+</template>
+
+<script src="js/main.js"></script>
+</body>
+</html>

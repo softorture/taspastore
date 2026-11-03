@@ -1,0 +1,30 @@
+{
+  "season": "Новый год 2027",
+  "orderDeadline": "2026-12-15",
+  "contactTelegram": "rarealmatysnowflake",
+  "categories": [
+    {"id": "jewelry", "name": "Украшения"},
+    {"id": "ceramics", "name": "Керамика"},
+    {"id": "candles", "name": "Свечи и ароматы"},
+    {"id": "leather", "name": "Кожа"},
+    {"id": "textile", "name": "Текстиль и вязание"},
+    {"id": "art", "name": "Принты и открытки"}
+  ],
+  "makers": [
+    {
+      "id": "brutalchain",
+      "name": "brutalchain",
+      "category": "jewelry",
+      "what": "Готические колье и браслеты с кольчужным плетением",
+      "materials": "Нержавеющая сталь, агат, гематит, барочный жемчуг",
+      "priceFrom": 15000,
+      "priceTo": 18000,
+      "leadTime": "Предзаказ, длина под мерки",
+      "forWhom": "Для неё, для тех, кто носит чёрное",
+      "instagram": "brutalchain",
+      "whatsapp": "",
+      "photos": [],
+      "listed": true
+    }
+  ]
+}
